@@ -50,12 +50,18 @@ const Tab = () => {
       <TabNavi.Screen
         name={navigations.Library}
         component={Library}
-        options={{ title: navigations.Library, tabBarIcon: ({ color, size }) => <FontAwesome5 name="book-open" color={color} size={size} /> }}
+        options={{
+          title: navigations.Library,
+          tabBarIcon: ({ color, size }) => <FontAwesome5 name="book-open" color={color} size={size} />,
+        }}
       />
       <TabNavi.Screen
         name={navigations.Mypage}
         component={Mypage}
-        options={{ title: navigations.Mypage, tabBarIcon: ({ color, size }) => <AntDesign name="user" color={color} size={size} /> }}
+        options={{
+          title: navigations.Mypage,
+          tabBarIcon: ({ color, size }) => <AntDesign name="user" color={color} size={size} />,
+        }}
       />
     </TabNavi.Navigator>
   );
