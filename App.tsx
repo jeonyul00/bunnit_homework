@@ -1,14 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import { NavigationContainer } from '@react-navigation/native';
+import Tab from '@src/navigations/tab';
 import React from 'react';
-import { Text, View } from 'react-native';
-import Tab from './src/navigations/tab';
 
 function App() {
   return (

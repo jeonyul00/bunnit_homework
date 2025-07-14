@@ -4,13 +4,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-
-import { navigations } from '../constants/navigations';
-import Home from '../screens/home';
-import Calender from '../screens/calender';
-import Library from '../screens/library';
-import Mypage from '../screens/mypage';
-import { colors } from '../constants/colors';
+import Mypage from '@src/screens/mypage';
+import { colors } from '@src/constants/colors';
+import { navigations } from '@src/constants/navigations';
+import Home from '@src/screens/home';
+import Calender from '@src/screens/calender';
+import Library from '@src/screens/library';
 
 export type TabParamList = {
   [navigations.Home]: undefined;
