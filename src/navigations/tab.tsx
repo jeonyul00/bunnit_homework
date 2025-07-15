@@ -8,18 +8,10 @@ import Mypage from '@src/screens/mypage';
 import { colors } from '@src/constants/colors';
 import { navigations } from '@src/constants/navigations';
 import Home from '@src/screens/home';
-
 import Library from '@src/screens/library';
 import Calendar from '@src/screens/calendar';
 
-export type TabParamList = {
-  [navigations.Home]: undefined;
-  [navigations.Calendar]: undefined;
-  [navigations.Library]: undefined;
-  [navigations.Mypage]: undefined;
-};
-
-const TabNavi = createBottomTabNavigator<TabParamList>();
+const TabNavi = createBottomTabNavigator();
 
 const Tab = () => {
   return (
