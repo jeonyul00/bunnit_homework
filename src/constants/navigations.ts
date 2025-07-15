@@ -1,6 +1,6 @@
 export const navigations = {
   Home: 'Home',
-  Calender: 'Calender',
+  Calendar: 'Calender',
   Library: 'Library',
   Mypage: 'Mypage',
 };

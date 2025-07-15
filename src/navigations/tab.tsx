@@ -8,12 +8,13 @@ import Mypage from '@src/screens/mypage';
 import { colors } from '@src/constants/colors';
 import { navigations } from '@src/constants/navigations';
 import Home from '@src/screens/home';
-import Calender from '@src/screens/calender';
+
 import Library from '@src/screens/library';
+import Calendar from '@src/screens/calendar';
 
 export type TabParamList = {
   [navigations.Home]: undefined;
-  [navigations.Calender]: undefined;
+  [navigations.Calendar]: undefined;
   [navigations.Library]: undefined;
   [navigations.Mypage]: undefined;
 };
@@ -40,10 +41,10 @@ const Tab = () => {
         }}
       />
       <TabNavi.Screen
-        name={navigations.Calender}
-        component={Calender}
+        name={navigations.Calendar}
+        component={Calendar}
         options={{
-          title: navigations.Calender,
+          title: navigations.Calendar,
           tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="calendar-month" color={color} size={size} />,
         }}
       />
