@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
 import { colors } from '@src/constants/colors';
 import dayjs from 'dayjs';
 
@@ -13,7 +13,7 @@ type Props = {
 
 const CalendarDay = ({ day, isCurrentMonth, isSelected, isToday, onSelect }: Props) => {
   return (
-    <TouchableOpacity
+    <Pressable
       key={day.format('YYYY-MM-DD')}
       style={[styles.dayContainer, !isCurrentMonth && styles.notCurrentMonth]}
       onPress={() => {
@@ -33,7 +33,7 @@ const CalendarDay = ({ day, isCurrentMonth, isSelected, isToday, onSelect }: Pro
           {day.date()}
         </Text>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 
